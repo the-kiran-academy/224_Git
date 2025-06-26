@@ -19,9 +19,33 @@ public class Operation {
 		// Yash Mandle
 	}
 
-	public static void isArmstrong(int number) {
-		// akshada Fartale 
-	}
+	 public static void isArmstrong(int number) {
+	        int originalNumber = number;
+	        int result = 0;
+	        int n = 0;
+
+	        // Count number of digits
+	        int temp = number;
+	        while (temp != 0) {
+	            temp /= 10;
+	            n++;
+	        }
+
+	        // Calculate sum of nth powers of digits
+	        temp = number;
+	        while (temp != 0) {
+	            int digit = temp % 10;
+	            result += Math.pow(digit, n);
+	            temp /= 10;
+	        }
+
+	        // Check if it is an Armstrong number
+	        if (result == originalNumber) {
+	            System.out.println(originalNumber + " is an Armstrong number.");
+	        } else {
+	            System.out.println(originalNumber + " is not an Armstrong number.");
+	        }
+	    }
 
 	public static void isPalindrome(int number) {
 		// kailas jare
