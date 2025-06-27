@@ -8,11 +8,16 @@ public class Operation {
 	}
 
 	public static void isOdd(int number) {
-		 // Swati Belokar
+	    if (number % 2 != 0) {
+	        System.out.println(number + " is odd.");
+	    } else {
+	        System.out.println(number + " is not odd.");
+	    }
+	
 	}
 
 	public static void isPrime(int number) {
-		// Ashvini Ingle 
+	// Ashvini Ingle 
 	}
 
 	public static void isPerfect(int number) {
