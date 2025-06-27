@@ -75,9 +75,9 @@ public class Operation {
 		// Ganesh Jadhav
 
 		if (name1.contains(name2)) {
-			System.out.println("\"" + name2 + "\" is a substring of \"" + name1 + "\"");
+			System.out.println ("\"" + name2 + "\" is a substring of \"" + name1 + "\"");
 		} else {
-			System.out.println("\"" + name2 + "\" is NOT a substring of \"" + name1 + "\"");
+			System.out.println ("\"" + name2 + "\" is NOT a substring of \"" + name1 + "\"");
 		}
 
 	}
