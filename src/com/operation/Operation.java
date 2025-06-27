@@ -1,5 +1,7 @@
 package com.operation;
 
+import java.util.Arrays;
+
 public class Operation {
 	
 	public static void isEven(int number) {
@@ -69,6 +71,28 @@ public class Operation {
 
 	public static void isAnagram(String name1, String name2) {
 		// Laxman Masale
+		 name1 = name1.replaceAll("\\s", "").toLowerCase();
+		    name2 = name2.replaceAll("\\s", "").toLowerCase();
+
+		    if (name1.length() != name2.length()) {
+		        System.out.println("Not anagrams.");
+		        return;
+		    }
+
+		    char[] arr1 = name1.toCharArray();
+		    char[] arr2 = name2.toCharArray();
+
+		    Arrays.sort(arr1);
+		    Arrays.sort(arr2);
+
+		    if (Arrays.equals(arr1, arr2)) {
+		        System.out.println("Strings are anagrams.");
+		    } else {
+		        System.out.println("Not anagrams.");
+		    }
+		
+		
+		
 	}
 
 	public static void isSubString(String name1, String name2) {
