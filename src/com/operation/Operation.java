@@ -73,6 +73,13 @@ public class Operation {
 
 	public static void isSubString(String name1, String name2) {
 		// Ganesh Jadhav
+
+		if (name1.contains(name2)) {
+			System.out.println("\"" + name2 + "\" is a substring of \"" + name1 + "\"");
+		} else {
+			System.out.println("\"" + name2 + "\" is NOT a substring of \"" + name1 + "\"");
+		}
+
 	}
 
 	public static void isVowel(char ch) {
