@@ -81,6 +81,7 @@ public class Operation {
 	
 	public static void isConsonant(char ch) {
 		// Shruti Gaikwad
+		
 	}
 	
 	public static void isLeapYear(int year) {
