@@ -128,8 +128,15 @@ public class Operation {
 	}
 
 	public static void sumOfArray(int[] arr) {
-		// Abhishek Kokitkar
+ 
+	    int sum = 0;
+	    for (int num : arr) {
+	        sum += num;
+	    }
+	    System.out.println("Sum of array elements: " + sum);
 	}
+	}
+
 
 	public static void isSorted(int[] arr) {
 		// Ganesh Chougule
