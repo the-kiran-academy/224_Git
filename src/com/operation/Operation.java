@@ -95,9 +95,28 @@ public class Operation {
 		// Ganesh Chougule
 	}
 	
-	public static void decendingArray(int[] arr) {
-		// Tejas Bagad 
+	    public static void decendingArray(int[] arr) {
+	        // Bubble sort in descending order
+	        for (int i = 0; i < arr.length - 1; i++) {
+	            for (int j = 0; j < arr.length - i - 1; j++) {
+	                if (arr[j] < arr[j + 1]) {
+	                    // Swap arr[j] and arr[j+1]
+	                    int temp = arr[j];
+	                    arr[j] = arr[j + 1];
+	                    arr[j + 1] = temp;
+	                }
+	            }
+	        }
+
+	        // Optional: Print the sorted array
+	        System.out.print("Array in descending order: ");
+	        for (int num : arr) {
+	            System.out.print(num + " ");
+	        }
+	        System.out.println();
+	    }
 	}
+
 	
 	public static void ascendingArray(int[] arr) {
 		// Likhita Bhangale
