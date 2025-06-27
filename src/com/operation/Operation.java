@@ -69,7 +69,25 @@ public class Operation {
 	}
 
 	public static void isStrong(int number) {
-		// Dhanashree Kadawale
+		int original = number;
+        int sum = 0;
+
+        while (number > 0) {
+            int digit = number % 10;
+            
+            
+            int fact = 1;
+            for (int i = 1; i <= digit; i++) {
+                fact *= i;
+            }
+            sum += fact;
+            number = number/10;
+        }
+        if (sum == original) {
+            System.out.println(original + " is a Strong Number.");
+        } else {
+            System.out.println(original + " is not a Strong Number.");
+        }
 	}
 
 	public static void isHarshad(int number) {
