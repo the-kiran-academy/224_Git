@@ -47,13 +47,37 @@ public class Operation {
 	        }
 	    }
 
-	public static void isPalindrome(int number) {
-		// kailas jare
-	}
-	
-	public static void isFibonacci(int number) {
-		// Dip Kale
-	}
+	 public static void isPalindrome(int number) {
+			// kailas jare
+		}
+		
+		 public static void isFibonacci(int number) {
+		        if (number < 0) {
+		            System.out.println(number + " is not a Fibonacci number (negative numbers are not in the sequence).");
+		            return;
+		        }
+
+		        // Formula to check Fibonacci: A number is Fibonacci if one or both of (5*n^2 + 4) or (5*n^2 - 4) is a perfect square
+		        if (isPerfectSquare(5 * number * number + 4) || isPerfectSquare(5 * number * number - 4)) {
+		            System.out.println(number + " is a Fibonacci number.");
+		        } else {
+		            System.out.println(number + " is not a Fibonacci number.");
+		        }
+		    }
+
+		    // Helper method to check if a number is a perfect square
+		    private static boolean isPerfectSquare(int n) {
+		        int sqrt = (int) Math.sqrt(n);
+		        return (sqrt * sqrt == n);
+		    }
+
+		    // Main method for testing
+		    public static void main(String[] args) {
+		        isFibonacci(21);  // Fibonacci number
+		        isFibonacci(22);  // Not a Fibonacci number
+		        isFibonacci(0);   // Fibonacci number
+		        isFibonacci(-5);  // Negative number, not Fibonacci
+		    }
 	
 	public static void isStrong(int number) {
 		// Dhanashree Kadawale
